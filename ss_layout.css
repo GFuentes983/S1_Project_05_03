@@ -32,27 +32,25 @@ article p:first-of-type:first-letter {
     line-height: 0.8em;
     margin: 0 5px 5px 0;
 }
- 
+/* This makes the first paragraph within the article element have the first line in a different font size and variant. It also sets the first letter of the first paragraph with a different font size, family, line height, margin  */
 /* Aside Styles */
 aside {
     width: 768px;
     float: left;
 }
-
-
-
+/* sets the width using absolute units and floats it to the left margin. */
 /* Map Styles */
-div#battleMap {
+#battleMap {
     width: 688px;
-    margin: 20px auto 20px auto;
+    margin: 20px auto;
     position: relative;
 }
 
-img#mapImage {
+#mapImage {
     display: block;
     width: 100%;
 }
-
+/* Sets the width for the id's battleMap and mapImage. It also sets margin for battleMap and sets its position relative to the parent element. */
 /* Interactive Map Styles */
 .battleMarkers  {
     position: absolute;
@@ -87,12 +85,14 @@ img#mapImage {
     top: 246px;
     left: 544px;
 }
-
+/* This sets the markers to their position by having it move out of their parent element. It uses abolute units */
 /* Map Information Styles */
 div.mapInfo {
     display: none;
 }
 
-a.battleMarkers:hover + div.mapInfo {
+a.battleMarkers:hover+div.mapInfo {
     display: block;
 }
+
+/* This sets the information on each battle to not show unless the mouse is hovered over a marker. */
